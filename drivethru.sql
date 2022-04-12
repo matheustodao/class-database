@@ -7,7 +7,7 @@ CREATE TABLE pratos(
     nome VARCHAR(255) NOT NULL,
     descricao VARCHAR(255),
     valor INT NOT NULL
-)
+);
 
 
 CREATE TABLE pedidos(
@@ -15,7 +15,7 @@ CREATE TABLE pedidos(
     quantidade INT NOT NULL,
     prato_id INT,
     FOREIGN KEY pedidos(prato_id) REFERENCES pratos(id)
-)
+);
 
 -- Adicionando um dado na tabela de pedido
 ALTER TABLE pedidos
